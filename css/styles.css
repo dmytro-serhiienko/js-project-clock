@@ -1,0 +1,130 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: #3f5efb;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  ) !important;
+  color: rgb(243, 243, 243);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* !STYLES */
+
+.body {
+  position: relative;
+}
+
+.time-wrapper {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 12px;
+
+  background-color: rgba(99, 134, 231, 0.4);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.time-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.time-display {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+  .time-wrapper {
+    width: 400px;
+  }
+
+  .time-wrapper {
+    padding: 20px;
+  }
+
+  .time-title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .time-display {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .time-wrapper {
+    width: 500px;
+  }
+
+  .time-wrapper {
+    padding: 20px;
+  }
+
+  .time-title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .time-display {
+    font-size: 70px;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
