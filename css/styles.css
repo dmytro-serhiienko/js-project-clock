@@ -107,22 +107,31 @@ button {
 
 @media screen and (min-width: 1200px) {
   .time-wrapper {
+    padding: 20px;
     width: 500px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     &:hover {
       transform: translate(-50%, -50%) scale(1.1);
-      background-color: rgba(252, 70, 107, 0.6);
+      background-color: rgba(252, 70, 107, 0.3);
     }
   }
 
-  .time-wrapper {
-    padding: 20px;
+  .time-title:hover {
+    color: #fff;
   }
 
   .time-display {
     font-size: 70px;
     font-weight: 300;
     line-height: normal;
+  }
+
+  .footer {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
