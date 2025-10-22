@@ -9,7 +9,7 @@ body {
     circle,
     rgba(63, 94, 251, 1) 0%,
     rgba(252, 70, 107, 1) 100%
-  ) !important;
+  );
   color: rgb(243, 243, 243);
   min-height: 100vh;
 }
