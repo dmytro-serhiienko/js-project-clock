@@ -45,11 +45,7 @@ button {
   border: none;
 }
 
-/* !STYLES */
-
-.body {
-  position: relative;
-}
+/* ! styles */
 
 /* !NAVIGATION STYLES */
 
@@ -75,59 +71,61 @@ button {
 
 /* ! */
 
-.time-wrapper {
-  text-align: center;
-  padding: 10px 20px;
-  border-radius: 20px;
+.body {
+  position: relative;
+}
 
-  background-color: rgba(63, 94, 251, 0.2);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-
+.body-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding: 20px 0;
+  border-radius: 30px;
+  background-color: rgba(63, 94, 251, 0.2);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 250px;
 }
 
-.time-title {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: normal;
+.button {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgba(111, 132, 236, 0.2);
+  box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
-.time-display {
+.stopwatch {
   font-size: 48px;
   font-weight: 300;
+}
+
+.button-list {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
 }
 
 .footer {
   position: absolute;
   bottom: 10px;
   width: 100%;
+  text-align: center;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .time-wrapper {
-    width: 400px;
-  }
-
-  .time-wrapper {
-    padding: 20px;
-  }
-
-  .time-title {
-    font-size: 26px;
-  }
-
-  .time-display {
-    font-size: 50px;
-    font-weight: 300;
-    line-height: normal;
-  }
-
   /* !NAVIGATION ITEM STYLES */
   .nav-item {
     padding: 15px 20px;
@@ -141,6 +139,10 @@ button {
     font-weight: 300;
     color: rgb(243, 243, 243);
   }
+
+  .body-container {
+    width: 350px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -153,34 +155,31 @@ button {
     }
   }
 
-  .time-wrapper {
+  .body-container {
+    height: 300px;
+    width: 500px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    width: 700px;
-    height: 300px;
-    transition: all 0.5s ease-in-out;
+  }
+
+  .stopwatch {
+    font-size: 64px;
+  }
+
+  .button-list {
+    gap: 30px;
+  }
+
+  .button {
+    transition: all 0.5s ease;
 
     &:hover {
-      transform: translate(-50%, -50%) scale(1.1);
-      background-color: rgba(252, 70, 107, 0.3);
+      background-color: rgba(111, 132, 236, 0.4);
+      transform: scale(1.1);
     }
-  }
-
-  .time-title {
-    font-size: 32px;
-  }
-
-  .time-title:hover {
-    color: #fff;
-  }
-
-  .time-display {
-    font-size: 100px;
-    font-weight: 300;
-    line-height: normal;
   }
 
   .footer {
